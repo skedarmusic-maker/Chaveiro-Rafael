@@ -71,6 +71,20 @@ export default function ServicesPage() {
                             slug = 'abertura-de-carros-ribeirao-preto'
                         } else if (slug === 'abertura-de-veiculos') {
                             slug = 'abertura-de-carros-ribeirao-preto'
+                        } else if (slug === 'abertura-de-residencias') {
+                            slug = 'abertura-de-residencias-ribeirao-preto'
+                        } else if (slug === 'copias-de-chaves') {
+                            slug = 'copia-de-chaves-ribeirao-preto'
+                        } else if (slug === 'chaves-codificadas') {
+                            slug = 'chaves-codificadas-ribeirao-preto'
+                        } else if (slug === 'instalacao-de-fechaduras') {
+                            slug = 'instalacao-de-fechaduras-ribeirao-preto'
+                        } else if (slug === 'troca-de-segredo') {
+                            slug = 'troca-de-segredo-ribeirao-preto'
+                        } else if (slug === 'chaveiro-automotivo') {
+                            slug = 'chaveiro-automotivo-ribeirao-preto'
+                        } else if (slug === 'chaveiro-24-horas') {
+                            slug = 'chaveiro-24-horas-ribeirao-preto'
                         }
 
                         return (

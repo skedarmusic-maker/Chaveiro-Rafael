@@ -1,5 +1,5 @@
 export const businessInfo = {
-    name: "Chaveiro Urgente 24 horas",
+    name: "Chaveiro Urgente 24 horas, Ribeirão preto",
     shortName: "Chaveiro Urgente", // Used in Navbar/Footer where space is limited
     address: "Av. Recife, 768 - Subsetor Norte - 13 (N-13), Ribeirão Preto - SP, 14078-390",
     phone: "(16) 99349-9652",
@@ -14,8 +14,8 @@ export const businessInfo = {
         longitude: -47.76462173372652
     },
     rating: {
-        value: 5.0,
-        count: 120 // Placeholder count to start
+        value: 4.8,
+        count: 60
     },
     socials: [], // Cleared as requested
     areaServed: [

@@ -26,10 +26,11 @@ export function Hero() {
                 </div>
 
                 {/* H1 Title - White and Yellow */}
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 max-w-4xl drop-shadow-md">
-                    Chaveiro 24 horas em <br className="hidden md:block" />
-                    <span className="text-yellow-300 drop-shadow-sm text-shadow-red">Ribeirão Preto</span>
-
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 max-w-6xl mx-auto drop-shadow-md leading-tight">
+                    Chaveiro Urgente 24 horas,{' '}
+                    <span className="text-yellow-300 drop-shadow-sm text-shadow-red whitespace-nowrap block mt-2 md:inline md:mt-0">
+                        Ribeirão preto
+                    </span>
                 </h1>
 
                 {/* Description/Address - Yellow/White */}

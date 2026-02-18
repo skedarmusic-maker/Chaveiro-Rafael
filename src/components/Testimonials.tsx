@@ -1,11 +1,7 @@
-
-'use client'
-
-import Script from 'next/script'
-
 'use client'
 
 import { motion } from 'framer-motion'
+import { businessInfo } from '@/data/businessInfo'
 
 export function Testimonials() {
     return (
@@ -41,14 +37,17 @@ export function Testimonials() {
                                 {/* Google Rating Box */}
                                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:bg-white/10 transition-colors">
                                     <div className="flex items-center gap-2 mb-2 justify-center lg:justify-start">
-                                        <span className="text-4xl font-black text-white">5.0</span>
-                                        <div className="flex text-yellow-400 text-2xl">
+                                        <span className="text-4xl font-black text-white">{businessInfo.rating.value.toFixed(1)}</span>
+                                        <div className="flex text-yellow-400 text-2xl" aria-label={`Avaliação de ${businessInfo.rating.value} estrelas`}>
                                             {'★★★★★'}
                                         </div>
                                     </div>
-                                    <p className="text-neutral-400 text-sm font-medium uppercase tracking-wide">
-                                        Avaliação Máxima no Google
-                                    </p>
+                                    <div className="text-neutral-400 text-sm font-medium uppercase tracking-wide flex flex-col">
+                                        <span>Excelente no Google</span>
+                                        <span className="text-xs text-neutral-500 normal-case mt-1">
+                                            Baseado em {businessInfo.rating.count} avaliações
+                                        </span>
+                                    </div>
                                 </div>
 
                                 <a
