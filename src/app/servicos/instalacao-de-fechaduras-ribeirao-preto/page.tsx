@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { businessInfo } from '@/data/businessInfo'
+import { ServiceJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
     title: 'Instalação de Fechaduras em Ribeirão Preto | Segurança Residencial',
@@ -10,11 +11,24 @@ export const metadata: Metadata = {
 }
 
 export default function InstalacaoFechadurasPage() {
+    const url = 'https://chaveirourgenterp.com.br/servicos/instalacao-de-fechaduras-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20instalação%20de%20fechadura.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 
     return (
         <main className="min-h-screen bg-neutral-900 text-white pb-20">
+            <ServiceJsonLd
+                title="Instalação de Fechaduras em Ribeirão Preto"
+                description="Serviço especializado de instalação e substituição de fechaduras residenciais, comerciais e digitais."
+                url={url}
+            />
+            <BreadcrumbJsonLd
+                items={[
+                    { name: 'Home', item: '/' },
+                    { name: 'Serviços', item: '/servicos' },
+                    { name: 'Instalação de Fechaduras', item: '/servicos/instalacao-de-fechaduras-ribeirao-preto' },
+                ]}
+            />
             {/* Bloco 1: Hero Section (Segurança e Confiança) */}
             <section className="relative py-20 px-4 pt-32 lg:pt-40 border-b-4 border-yellow-400 bg-red-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-800 to-red-950 opacity-80 z-0"></div>

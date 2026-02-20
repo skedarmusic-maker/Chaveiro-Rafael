@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { businessInfo } from '@/data/businessInfo'
+import { ServiceJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
     title: 'Chave Codificada em Ribeirão Preto | Especialista Automotivo 24h',
@@ -10,11 +11,24 @@ export const metadata: Metadata = {
 }
 
 export default function ChavesCodificadasPage() {
+    const url = 'https://chaveirourgenterp.com.br/servicos/chaves-codificadas-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20preciso%20de%20um%20orçamento%20para%20chave%20codificada.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 
     return (
         <main className="min-h-screen bg-neutral-900 text-white pb-20">
+            <ServiceJsonLd
+                title="Codificação de Chaves em Ribeirão Preto"
+                description="Serviço especializado de codificação de chaves automotivas, transponders e telecomandos para todas as marcas."
+                url={url}
+            />
+            <BreadcrumbJsonLd
+                items={[
+                    { name: 'Home', item: '/' },
+                    { name: 'Serviços', item: '/servicos' },
+                    { name: 'Chaves Codificadas', item: '/servicos/chaves-codificadas-ribeirao-preto' },
+                ]}
+            />
             {/* Bloco 1: Hero Section (Especialização Automotiva) */}
             <section className="relative py-20 px-4 pt-32 lg:pt-40 border-b-4 border-yellow-400 bg-red-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-800 to-red-950 opacity-80 z-0"></div>

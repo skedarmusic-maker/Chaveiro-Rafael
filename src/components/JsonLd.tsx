@@ -7,16 +7,17 @@ export function LocalBusinessJsonLd() {
         "@id": `${businessInfo.siteUrl}/#organization`,
         "name": businessInfo.name,
         "url": businessInfo.siteUrl,
-
+        "logo": `${businessInfo.siteUrl}/logo.png`,
+        "image": `${businessInfo.siteUrl}/images/hero-bg.jpg`,
         "description": businessInfo.description,
         "telephone": businessInfo.phone,
         "priceRange": businessInfo.priceRange,
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Av. Karl Iwers, 1800",
-            "addressLocality": "Porto Alegre",
-            "addressRegion": "RS",
-            "postalCode": "91230-570",
+            "streetAddress": businessInfo.address.split(' - ')[0],
+            "addressLocality": "Ribeirão Preto",
+            "addressRegion": "SP",
+            "postalCode": "14078-390",
             "addressCountry": "BR"
         },
         "geo": {
@@ -56,7 +57,7 @@ export function LocalBusinessJsonLd() {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": service
+                    "name": service.label
                 }
             }))
         }
@@ -70,30 +71,41 @@ export function LocalBusinessJsonLd() {
     )
 }
 
-export function ServiceListJsonLd() {
-    const services = businessInfo.services.map((service) => ({
-        "@type": "Service",
-        "name": service,
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": businessInfo.name,
+export function BreadcrumbJsonLd({ items }: { items: { name: string, item: string }[] }) {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": items.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": item.name,
+            "item": item.item.startsWith('http') ? item.item : `${businessInfo.siteUrl}${item.item}`
+        }))
+    }
 
-            "telephone": businessInfo.phone,
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Av. Karl Iwers, 1800",
-                "addressLocality": "Porto Alegre",
-                "addressRegion": "RS",
-                "postalCode": "91230-570",
-                "addressCountry": "BR"
-            }
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Porto Alegre"
-        },
-        "url": `${businessInfo.siteUrl}/servicos/${service.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-')}`
-    }))
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+    )
+}
+
+export function ServiceListJsonLd() {
+    const services = businessInfo.services.map((service) => {
+        return {
+            "@type": "Service",
+            "name": service.label,
+            "provider": {
+                "@id": `${businessInfo.siteUrl}/#organization`
+            },
+            "areaServed": businessInfo.areaServed.map(city => ({
+                "@type": "City",
+                "name": city
+            })),
+            "url": `${businessInfo.siteUrl}/servicos/${service.slug}`
+        }
+    })
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -117,10 +129,8 @@ interface ServiceJsonLdProps {
     name?: string
     title?: string
     description: string
-    url: string
-    alternates?: {
-        canonical: string
-    }
+    urlBase?: string
+    url?: string
 }
 
 export function ServiceJsonLd({ name, title, description, url }: ServiceJsonLdProps) {

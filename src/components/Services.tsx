@@ -1,4 +1,5 @@
 import { businessInfo } from '@/data/businessInfo'
+import Link from 'next/link'
 
 export function Services() {
     return (
@@ -19,7 +20,7 @@ export function Services() {
                             key={index}
                             className="group p-6 rounded-xl border-2 border-red-500 bg-red-800 hover:border-yellow-400 hover:bg-red-900 hover:shadow-[0_0_20px_rgba(250,204,21,0.3)] hover:-translate-y-1 transition-all duration-200"
                         >
-                            <div className="flex items-start gap-4">
+                            <Link href={`/servicos/${service.slug}`} className="flex items-start gap-4 h-full">
                                 <div className="mt-1 min-w-[24px] text-yellow-400 group-hover:text-yellow-300 transition-colors">
                                     {/* Key Icon */}
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,9 +28,9 @@ export function Services() {
                                     </svg>
                                 </div>
                                 <h3 className="text-white font-bold text-lg group-hover:text-yellow-200 transition-colors">
-                                    {service}
+                                    {service.label}
                                 </h3>
-                            </div>
+                            </Link>
                         </div>
                     ))}
                 </div>

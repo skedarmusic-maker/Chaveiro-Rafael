@@ -3,7 +3,7 @@ export const businessInfo = {
     shortName: "Chaveiro Urgente", // Used in Navbar/Footer where space is limited
     address: "Av. Recife, 768 - Subsetor Norte - 13 (N-13), Ribeirão Preto - SP, 14078-390",
     phone: "(16) 99349-9652",
-    hours: "Aberto 24 horas",
+    hours: "Disponível 24h",
     plusCode: "V66P+54 Subsetor Norte - 13 (N-13), Ribeirão Preto - SP",
 
     siteUrl: "https://chaveirourgenterp.com.br", // Placeholder, adjust if known
@@ -27,14 +27,14 @@ export const businessInfo = {
     ],
     description: "Chaveiro Urgente 24 horas em Ribeirão Preto. Atendimento rápido e especializado em chaves automotivas, residenciais e comerciais. Plantão 24h para emergências. Ligue agora!",
     services: [
-        "Abertura de carros",
-        "Abertura de residências",
-        "Cópias de chaves",
-        "Chaves codificadas",
-        "Instalação de fechaduras",
-        "Troca de segredo",
-        "Chaveiro automotivo",
-        "Chaveiro 24 horas"
+        { label: "Chaveiro 24 Horas", slug: "chaveiro-24-horas-ribeirao-preto" },
+        { label: "Chaveiro Automotivo", slug: "chaveiro-automotivo-ribeirao-preto" },
+        { label: "Abertura de Residências", slug: "abertura-de-residencias-ribeirao-preto" },
+        { label: "Abertura de Carros", slug: "abertura-de-carros-ribeirao-preto" },
+        { label: "Cópia de Chaves", slug: "copia-de-chaves-ribeirao-preto" },
+        { label: "Chaves Codificadas", slug: "chaves-codificadas-ribeirao-preto" },
+        { label: "Instalação de Fechaduras", slug: "instalacao-de-fechaduras-ribeirao-preto" },
+        { label: "Troca de Segredo", slug: "troca-de-segredo-ribeirao-preto" }
     ],
     seo: {
         core: [

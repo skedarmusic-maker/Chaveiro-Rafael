@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { businessInfo } from '@/data/businessInfo'
+import { ServiceJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
     title: 'Abertura de Residências em Ribeirão Preto | Chaveiro 24h',
@@ -10,11 +11,24 @@ export const metadata: Metadata = {
 }
 
 export default function AberturaResidenciasPage() {
+    const url = 'https://chaveirourgenterp.com.br/servicos/abertura-de-residencias-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20fiquei%20trancado%20para%20fora%20de%20casa%20e%20preciso%20de%20ajuda%20urgente.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 
     return (
         <main className="min-h-screen bg-neutral-900 text-white pb-20">
+            <ServiceJsonLd
+                title="Abertura de Residências em Ribeirão Preto"
+                description="Serviço de abertura de portas e residências 24 horas. Atendimento rápido e profissionais qualificados."
+                url={url}
+            />
+            <BreadcrumbJsonLd
+                items={[
+                    { name: 'Home', item: '/' },
+                    { name: 'Serviços', item: '/servicos' },
+                    { name: 'Abertura de Residências', item: '/servicos/abertura-de-residencias-ribeirao-preto' },
+                ]}
+            />
             {/* HER0 SECTION */}
             <section className="relative py-20 px-4 pt-32 lg:pt-40 border-b-4 border-yellow-400 bg-red-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-800 to-red-950 opacity-80 z-0"></div>

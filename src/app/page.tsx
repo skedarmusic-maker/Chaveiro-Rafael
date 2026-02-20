@@ -7,12 +7,10 @@ import { Testimonials } from '@/components/Testimonials'
 
 import { businessInfo } from '@/data/businessInfo'
 import Link from 'next/link'
-import { LocalBusinessJsonLd } from '@/components/JsonLd'
 
 export default function Home() {
     return (
         <main className="min-h-screen bg-neutral-950 text-white overflow-x-hidden selection:bg-red-900 selection:text-white">
-            <LocalBusinessJsonLd />
 
             <Hero />
             <Services />

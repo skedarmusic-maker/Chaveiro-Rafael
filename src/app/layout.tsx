@@ -39,6 +39,7 @@ export const metadata: Metadata = {
 
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { LocalBusinessJsonLd } from '@/components/JsonLd'
 
 export default function RootLayout({
     children,
@@ -48,6 +49,7 @@ export default function RootLayout({
     return (
         <html lang="pt-BR">
             <body className={`${inter.className} bg-black text-white antialiased selection:bg-primary-500 selection:text-white`}>
+                <LocalBusinessJsonLd />
                 <Navbar />
                 <div className="pt-20">
                     {children}

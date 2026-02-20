@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { businessInfo } from '@/data/businessInfo'
+import { ServiceJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
     title: 'Troca de Segredo em Ribeirão Preto | Segurança Imediata',
@@ -10,11 +11,24 @@ export const metadata: Metadata = {
 }
 
 export default function TrocaSegredoPage() {
+    const url = 'https://chaveirourgenterp.com.br/servicos/troca-de-segredo-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20preciso%20trocar%20o%20segredo%20da%20minha%20fechadura.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 
     return (
         <main className="min-h-screen bg-neutral-900 text-white pb-20">
+            <ServiceJsonLd
+                title="Troca de Segredo de Fechaduras em Ribeirão Preto"
+                description="Serviço profissional de troca de segredo e cilindro para residências e empresas. Segurança garantida 24h."
+                url={url}
+            />
+            <BreadcrumbJsonLd
+                items={[
+                    { name: 'Home', item: '/' },
+                    { name: 'Serviços', item: '/servicos' },
+                    { name: 'Troca de Segredo', item: '/servicos/troca-de-segredo-ribeirao-preto' },
+                ]}
+            />
             {/* Bloco 1: Hero Section (Segurança Imediata) */}
             <section className="relative py-20 px-4 pt-32 lg:pt-40 border-b-4 border-yellow-400 bg-red-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-800 to-red-950 opacity-80 z-0"></div>

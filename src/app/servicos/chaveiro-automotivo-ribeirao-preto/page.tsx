@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { businessInfo } from '@/data/businessInfo'
+import { ServiceJsonLd, BreadcrumbJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
     title: 'Chaveiro Automotivo em Ribeirão Preto 24h | Atendimento Rápido',
@@ -10,11 +11,24 @@ export const metadata: Metadata = {
 }
 
 export default function ChaveiroAutomotivoPage() {
+    const url = 'https://chaveirourgenterp.com.br/servicos/chaveiro-automotivo-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20preciso%20de%20um%20chaveiro%20automotivo.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 
     return (
         <main className="min-h-screen bg-neutral-900 text-white pb-20">
+            <ServiceJsonLd
+                title="Chaveiro Automotivo em Ribeirão Preto"
+                description="Especialista em abertura de veículos, cópia de chaves codificadas e telecomandos. Atendimento 24 horas no local."
+                url={url}
+            />
+            <BreadcrumbJsonLd
+                items={[
+                    { name: 'Home', item: '/' },
+                    { name: 'Serviços', item: '/servicos' },
+                    { name: 'Chaveiro Automotivo', item: '/servicos/chaveiro-automotivo-ribeirao-preto' },
+                ]}
+            />
             {/* Bloco 1: Hero Section (Especialização e Rapidez) */}
             <section className="relative py-20 px-4 pt-32 lg:pt-40 border-b-4 border-yellow-400 bg-red-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-800 to-red-950 opacity-80 z-0"></div>

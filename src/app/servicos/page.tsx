@@ -63,63 +63,38 @@ export default function ServicesPage() {
             {/* Services Grid */}
             <section className="container mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {businessInfo.services.map((service, index) => {
-                        let slug = slugify(service)
-
-                        // Manual override for specific services to match folder structure
-                        if (slug === 'abertura-de-carros') {
-                            slug = 'abertura-de-carros-ribeirao-preto'
-                        } else if (slug === 'abertura-de-veiculos') {
-                            slug = 'abertura-de-carros-ribeirao-preto'
-                        } else if (slug === 'abertura-de-residencias') {
-                            slug = 'abertura-de-residencias-ribeirao-preto'
-                        } else if (slug === 'copias-de-chaves') {
-                            slug = 'copia-de-chaves-ribeirao-preto'
-                        } else if (slug === 'chaves-codificadas') {
-                            slug = 'chaves-codificadas-ribeirao-preto'
-                        } else if (slug === 'instalacao-de-fechaduras') {
-                            slug = 'instalacao-de-fechaduras-ribeirao-preto'
-                        } else if (slug === 'troca-de-segredo') {
-                            slug = 'troca-de-segredo-ribeirao-preto'
-                        } else if (slug === 'chaveiro-automotivo') {
-                            slug = 'chaveiro-automotivo-ribeirao-preto'
-                        } else if (slug === 'chaveiro-24-horas') {
-                            slug = 'chaveiro-24-horas-ribeirao-preto'
-                        }
-
-                        return (
-                            <div
-                                key={index}
-                                className="group flex flex-col justify-between p-8 rounded-2xl border-2 border-red-500 bg-red-800 hover:border-yellow-400 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
-                            >
-                                <div>
-                                    <div className="w-14 h-14 bg-red-900 border border-red-500 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-400 group-hover:border-yellow-600 transition-colors duration-300">
-                                        <svg className="w-7 h-7 text-yellow-400 group-hover:text-red-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                                        </svg>
-                                    </div>
-
-                                    <h3 className="text-2xl font-black text-white mb-4 group-hover:text-yellow-400 transition-colors uppercase tracking-tight">
-                                        {service}
-                                    </h3>
-
-                                    <p className="text-red-100/80 text-base mb-8 font-medium">
-                                        Solução profissional e rápida para {service.toLowerCase()}. Conte com nossa equipe especializada.
-                                    </p>
+                    {businessInfo.services.map((service, index) => (
+                        <div
+                            key={index}
+                            className="group flex flex-col justify-between p-8 rounded-2xl border-2 border-red-500 bg-red-800 hover:border-yellow-400 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
+                        >
+                            <div>
+                                <div className="w-14 h-14 bg-red-900 border border-red-500 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-400 group-hover:border-yellow-600 transition-colors duration-300">
+                                    <svg className="w-7 h-7 text-yellow-400 group-hover:text-red-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                                    </svg>
                                 </div>
 
-                                <Link
-                                    href={`/servicos/${slug}`}
-                                    className="inline-flex items-center text-md font-black text-yellow-400 hover:text-yellow-300 transition-colors uppercase tracking-widest"
-                                >
-                                    SAIBA MAIS
-                                    <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </Link>
+                                <h3 className="text-2xl font-black text-white mb-4 group-hover:text-yellow-400 transition-colors uppercase tracking-tight">
+                                    {service.label}
+                                </h3>
+
+                                <p className="text-red-100/80 text-base mb-8 font-medium">
+                                    Solução profissional e rápida para {service.label.toLowerCase()}. Conte com nossa equipe especializada.
+                                </p>
                             </div>
-                        )
-                    })}
+
+                            <Link
+                                href={`/servicos/${service.slug}`}
+                                className="inline-flex items-center text-md font-black text-yellow-400 hover:text-yellow-300 transition-colors uppercase tracking-widest"
+                            >
+                                SAIBA MAIS
+                                <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </Link>
+                        </div>
+                    ))}
                 </div>
             </section>
 

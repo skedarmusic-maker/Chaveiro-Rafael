@@ -31,7 +31,7 @@ export default function sitemap() {
 
     // Dynamic service routes
     const serviceRoutes = businessInfo.services.map((service) => ({
-        url: `${baseUrl}/servicos/${slugify(service)}/`,
+        url: `${baseUrl}/servicos/${service.slug}/`,
         lastModified: new Date().toISOString().split('T')[0],
     }))
 
