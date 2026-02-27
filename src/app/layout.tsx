@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         description: businessInfo.description,
     },
     verification: {
-        google: '9L8FQl83SDpT8Cn3MxWAvHYn9hnRZPLwGjahjI8_Es0',
+        google: 'u_ywLN9SNyOSj45BKXf2Dq6MlzrxMjAWpNeKyxgIs1M',
     },
 }
 
