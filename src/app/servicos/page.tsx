@@ -1,7 +1,6 @@
 import { businessInfo } from '@/data/businessInfo'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LocalBusinessJsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
     title: 'Serviços de Chaveiro 24h em Ribeirão Preto | Chaveiro Urgente',
@@ -30,7 +29,6 @@ export default function ServicesPage() {
 
     return (
         <main className="min-h-screen bg-red-700 text-white pb-20">
-            <LocalBusinessJsonLd />
             <ServiceListJsonLd />
             {/* Header Section */}
             <section className="relative py-20 border-b-4 border-yellow-400 bg-red-600">
