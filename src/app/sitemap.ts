@@ -15,7 +15,7 @@ function slugify(text: string) {
 }
 
 export default function sitemap() {
-    const baseUrl = 'https://chaveirourgenterp.com.br' // Replace with actual domain when live
+    const baseUrl = 'https://chaveiro24hribeiraopreto.com.br' // Replace with actual domain when live
 
     // Static routes
     const routes = [

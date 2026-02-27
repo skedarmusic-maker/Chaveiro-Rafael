@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     title: 'Chaveiro 24 Horas em Ribeirão Preto | Atendimento Imediato',
     description: 'Emergência com chaves? Chaveiro 24 horas em Ribeirão Preto. Atendimento em até 20 minutos para abertura de portas e veículos. Plantão de madrugada e feriados.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/chaveiro-24-horas-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/chaveiro-24-horas-ribeirao-preto/',
     },
 }
 
 export default function Chaveiro24HorasPage() {
-    const url = 'https://chaveirourgenterp.com.br/servicos/chaveiro-24-horas-ribeirao-preto/'
+    const url = 'https://chaveiro24hribeiraopreto.com.br/servicos/chaveiro-24-horas-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20preciso%20de%20um%20chaveiro%20AGORA!`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 

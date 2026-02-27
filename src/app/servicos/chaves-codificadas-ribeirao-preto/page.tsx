@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     title: 'Chave Codificada em Ribeirão Preto | Especialista Automotivo 24h',
     description: 'Perdeu a chave do carro? Codificação de chaves e telecomandos para todas as marcas em Ribeirão Preto. Atendimento rápido e preço justo. Economize até 50% em relação à concessionária.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/chaves-codificadas-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/chaves-codificadas-ribeirao-preto/',
     },
 }
 
 export default function ChavesCodificadasPage() {
-    const url = 'https://chaveirourgenterp.com.br/servicos/chaves-codificadas-ribeirao-preto/'
+    const url = 'https://chaveiro24hribeiraopreto.com.br/servicos/chaves-codificadas-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20preciso%20de%20um%20orçamento%20para%20chave%20codificada.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 

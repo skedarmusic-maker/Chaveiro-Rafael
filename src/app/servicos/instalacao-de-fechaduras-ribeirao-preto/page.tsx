@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     title: 'Instalação de Fechaduras em Ribeirão Preto | Segurança Residencial',
     description: 'Especialistas em instalação e troca de fechaduras residenciais e comerciais em Ribeirão Preto. Fechaduras eletrônicas, tetra e de alta segurança. Atendimento rápido na Av. Recife.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/instalacao-de-fechaduras-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/instalacao-de-fechaduras-ribeirao-preto/',
     },
 }
 
 export default function InstalacaoFechadurasPage() {
-    const url = 'https://chaveirourgenterp.com.br/servicos/instalacao-de-fechaduras-ribeirao-preto/'
+    const url = 'https://chaveiro24hribeiraopreto.com.br/servicos/instalacao-de-fechaduras-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20instalação%20de%20fechadura.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 

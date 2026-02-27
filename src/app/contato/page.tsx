@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Entre em Contato | Chaveiro Urgente 24h',
     description: 'Fale com Chaveiro Urgente agora. Atendimento 24 horas via WhatsApp ou telefone. Chaveiro emergencial em Ribeirão Preto e região.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/contato/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/contato/',
     },
 }
 

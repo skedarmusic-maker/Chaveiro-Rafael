@@ -1,0 +1,155 @@
+PATH: /
+  [D] public_html
+PATH: /public_html
+  [F] palavra chave ribeirao preto.csv
+  [D] sobre
+PATH: /public_html/sobre
+  [F] index.txt
+  [F] index.html
+  [D] 404
+PATH: /public_html/404
+  [F] index.html
+  [F] 404.html
+  [D] _next
+PATH: /public_html/_next
+  [D] k2UlRZXUsvCluum6GJ5g4
+PATH: /public_html/_next/k2UlRZXUsvCluum6GJ5g4
+  [D] static
+PATH: /public_html/_next/static
+  [D] chunks
+PATH: /public_html/_next/static/chunks
+  [F] 338-af80a6fd305cfe83.js
+  [F] polyfills-c67a75d1b6f99dc8.js
+  [F] fd9d1056-803f3afc98c64581.js
+  [D] pages
+PATH: /public_html/_next/static/chunks/pages
+  [F] _app-75f6107b0260711c.js
+  [F] _error-9a890acb1e81c3fc.js
+  [F] 250-c7e6de34f9e8b280.js
+  [F] main-634a0c7b682803ff.js
+  [F] main-app-ce93653fd8973efc.js
+  [F] webpack-abbd501c85430317.js
+  [D] app
+PATH: /public_html/_next/static/chunks/app
+  [F] layout-e2f5ef3acd38dd48.js
+  [D] sobre
+PATH: /public_html/_next/static/chunks/app/sobre
+  [F] page-9f8da333d221f373.js
+  [F] _not-found-7544f47909dc9de3.js
+  [F] page-d724535ac0debbf0.js
+  [D] contato
+PATH: /public_html/_next/static/chunks/app/contato
+  [F] page-c62b80f4335e5566.js
+  [D] servicos
+PATH: /public_html/_next/static/chunks/app/servicos
+  [D] chaveiro-24-horas-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/chaveiro-24-horas-ribeirao-preto
+  [F] page-4715e3db79a4a469.js
+  [D] copia-de-chaves-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/copia-de-chaves-ribeirao-preto
+  [F] page-2f509ae6de02f7f2.js
+  [D] instalacao-de-fechaduras-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/instalacao-de-fechaduras-ribeirao-preto
+  [F] page-8566bbf5ce9bbfcd.js
+  [F] page-b067ac34a02078e6.js
+  [D] chaves-codificadas-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/chaves-codificadas-ribeirao-preto
+  [F] page-9d34c3a4ba9f1ff1.js
+  [D] troca-de-segredo-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/troca-de-segredo-ribeirao-preto
+  [F] page-2464f02684cc73a4.js
+  [D] chaveiro-automotivo-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/chaveiro-automotivo-ribeirao-preto
+  [F] page-769c5b4402f303bb.js
+  [D] abertura-de-carros-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/abertura-de-carros-ribeirao-preto
+  [F] page-6372495dffdc51bd.js
+  [D] abertura-de-residencias-ribeirao-preto
+PATH: /public_html/_next/static/chunks/app/servicos/abertura-de-residencias-ribeirao-preto
+  [F] page-33e361c8ae278486.js
+  [F] 69-86db9da152a78992.js
+  [F] framework-f66176bb897dc684.js
+  [D] css
+PATH: /public_html/_next/static/css
+  [F] ea231c9bb2695799.css
+  [D] k2UlRZXUsvCluum6GJ5g4
+PATH: /public_html/_next/static/k2UlRZXUsvCluum6GJ5g4
+  [F] _buildManifest.js
+  [F] _ssgManifest.js
+  [D] media
+PATH: /public_html/_next/static/media
+  [F] ba9851c3c22cd980-s.woff2
+  [F] 21350d82a1f187e9-s.woff2
+  [F] df0a9ae256c0569c-s.woff2
+  [F] e4af272ccee01ff0-s.p.woff2
+  [F] 19cfc7226ec3afaa-s.woff2
+  [F] 8e9860b6e62d6359-s.woff2
+  [F] c5fe6dc8356a8c31-s.woff2
+  [F] index.txt
+  [F] index.html
+  [F] sitemap.xml
+  [F] manifest.webmanifest
+  [F] .htaccess
+  [D] contato
+PATH: /public_html/contato
+  [F] index.txt
+  [F] index.html
+  [F] icon.svg
+  [D] images
+PATH: /public_html/images
+  [D] galery
+PATH: /public_html/images/galery
+  [F] WhatsApp Image 2026-02-13 at 13.53.04 (2).jpeg
+  [F] WhatsApp Image 2026-02-13 at 13.53.03.jpeg
+  [F] WhatsApp Image 2026-02-13 at 13.53.04.jpeg
+  [F] WhatsApp Image 2026-02-13 at 13.53.05.jpeg
+  [F] WhatsApp Image 2026-02-13 at 13.53.03 (1).jpeg
+  [F] WhatsApp Image 2026-02-13 at 13.53.04 (3).jpeg
+  [F] WhatsApp Image 2026-02-13 at 13.53.04 (1).jpeg
+  [D] videos
+PATH: /public_html/images/videos
+  [F] VID-20260213-WA0053.webm
+  [F] VID-20260213-WA0052.webm
+  [F] VID-20260213-WA0054.webm
+  [F] google-reviews.webm
+  [F] VID-20260213-WA0051.webm
+  [F] VID-20260213-WA0055.webm
+  [F] VID-20260213-WA0050.webm
+  [F] video-poster.jpg
+  [F] robots.txt
+  [D] servicos
+PATH: /public_html/servicos
+  [D] chaveiro-24-horas-ribeirao-preto
+PATH: /public_html/servicos/chaveiro-24-horas-ribeirao-preto
+  [F] index.txt
+  [F] index.html
+  [D] copia-de-chaves-ribeirao-preto
+PATH: /public_html/servicos/copia-de-chaves-ribeirao-preto
+  [F] index.txt
+  [F] index.html
+  [F] index.txt
+  [D] instalacao-de-fechaduras-ribeirao-preto
+PATH: /public_html/servicos/instalacao-de-fechaduras-ribeirao-preto
+  [F] index.txt
+  [F] index.html
+  [F] index.html
+  [D] chaves-codificadas-ribeirao-preto
+PATH: /public_html/servicos/chaves-codificadas-ribeirao-preto
+  [F] index.txt
+  [F] index.html
+  [D] troca-de-segredo-ribeirao-preto
+PATH: /public_html/servicos/troca-de-segredo-ribeirao-preto
+  [F] index.txt
+  [F] index.html
+  [D] chaveiro-automotivo-ribeirao-preto
+PATH: /public_html/servicos/chaveiro-automotivo-ribeirao-preto
+  [F] index.txt
+  [F] index.html
+  [D] abertura-de-carros-ribeirao-preto
+PATH: /public_html/servicos/abertura-de-carros-ribeirao-preto
+  [F] index.txt
+  [F] index.html
+  [D] abertura-de-residencias-ribeirao-preto
+PATH: /public_html/servicos/abertura-de-residencias-ribeirao-preto
+  [F] index.txt
+  [F] index.html

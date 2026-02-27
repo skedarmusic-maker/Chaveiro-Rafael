@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Cópia de Chaves em Ribeirão Preto | Precisão e Rapidez',
     description: 'Cópias de chaves residenciais, comerciais e automotivas feitas na hora em Ribeirão Preto. Equipamentos de última geração e precisão garantida. Visite-nos na Av. Recife.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/copia-de-chaves-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/copia-de-chaves-ribeirao-preto/',
     },
 }
 

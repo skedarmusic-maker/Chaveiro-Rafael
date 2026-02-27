@@ -6,7 +6,7 @@ export const businessInfo = {
     hours: "Disponível 24h",
     plusCode: "V66P+54 Subsetor Norte - 13 (N-13), Ribeirão Preto - SP",
 
-    siteUrl: "https://chaveirourgenterp.com.br", // Placeholder, adjust if known
+    siteUrl: "https://chaveiro24hribeiraopreto.com.br", // Placeholder, adjust if known
 
     priceRange: "$$",
     geo: {

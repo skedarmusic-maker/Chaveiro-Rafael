@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: 'Serviços de Chaveiro 24h em Ribeirão Preto | Chaveiro Urgente',
     description: 'Confira nossos serviços de chaveiro 24 horas: cópia de chaves, abertura de portas, chaves codificadas e mais. Atendimento emergencial em Ribeirão Preto e região.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/',
     },
 }
 

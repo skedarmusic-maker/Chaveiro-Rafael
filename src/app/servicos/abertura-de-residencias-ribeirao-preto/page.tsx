@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     title: 'Abertura de Residências em Ribeirão Preto | Chaveiro 24h',
     description: 'Ficou trancado para fora de casa? Chaveiro especialista em abertura de portas residenciais, portões e trocas de segredos em Ribeirão Preto. Chegamos rápido! 24 horas.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/abertura-de-residencias-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/abertura-de-residencias-ribeirao-preto/',
     },
 }
 
 export default function AberturaResidenciasPage() {
-    const url = 'https://chaveirourgenterp.com.br/servicos/abertura-de-residencias-ribeirao-preto/'
+    const url = 'https://chaveiro24hribeiraopreto.com.br/servicos/abertura-de-residencias-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20fiquei%20trancado%20para%20fora%20de%20casa%20e%20preciso%20de%20ajuda%20urgente.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 

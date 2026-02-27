@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     title: 'Troca de Segredo em Ribeirão Preto | Segurança Imediata',
     description: 'Mudou de casa ou perdeu as chaves? Troque o segredo da sua fechadura agora. Serviço rápido, econômico e seguro em Ribeirão Preto. Atendimento 24h na Av. Recife.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/troca-de-segredo-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/troca-de-segredo-ribeirao-preto/',
     },
 }
 
 export default function TrocaSegredoPage() {
-    const url = 'https://chaveirourgenterp.com.br/servicos/troca-de-segredo-ribeirao-preto/'
+    const url = 'https://chaveiro24hribeiraopreto.com.br/servicos/troca-de-segredo-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20preciso%20trocar%20o%20segredo%20da%20minha%20fechadura.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 

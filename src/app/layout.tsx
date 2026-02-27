@@ -7,14 +7,14 @@ import { businessInfo } from '@/data/businessInfo'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://chaveirourgenterp.com.br'),
+    metadataBase: new URL('https://chaveiro24hribeiraopreto.com.br'),
     title: {
         default: "Chaveiro 24 Horas em Ribeirão Preto | Chaveiro Urgente",
         template: '%s | Chaveiro Urgente'
     },
     description: businessInfo.description,
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/',
     },
     // icons: {
     //     icon: '/favicon.ico',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'pt_BR',
-        url: 'https://chaveirourgenterp.com.br',
+        url: 'https://chaveiro24hribeiraopreto.com.br',
         siteName: 'Chaveiro Urgente | Chaveiro 24h',
         title: 'Chaveiro 24 Horas em Ribeirão Preto | Chaveiro Urgente',
         description: businessInfo.description,

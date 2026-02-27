@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     title: 'Chaveiro Automotivo em Ribeirão Preto 24h | Atendimento Rápido',
     description: 'Chaveiro automotivo 24 horas em Ribeirão Preto. Abertura de veículos, cópia de chave codificada e confecção de chaves no local. Atendemos todas as marcas e modelos.',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/chaveiro-automotivo-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/chaveiro-automotivo-ribeirao-preto/',
     },
 }
 
 export default function ChaveiroAutomotivoPage() {
-    const url = 'https://chaveirourgenterp.com.br/servicos/chaveiro-automotivo-ribeirao-preto/'
+    const url = 'https://chaveiro24hribeiraopreto.com.br/servicos/chaveiro-automotivo-ribeirao-preto/'
     const whatsappLink = `https://wa.me/55${businessInfo.phone.replace(/\D/g, '')}?text=Olá,%20preciso%20de%20um%20chaveiro%20automotivo.`
     const cleanPhone = businessInfo.phone.replace(/[^0-9]/g, '')
 

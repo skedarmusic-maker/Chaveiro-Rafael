@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Abertura de Carros em Ribeirão Preto | Chaveiro Automotivo 24h',
     description: 'Chaveiro automotivo em Ribeirão Preto especializado em abertura de carros trancados sem danos. Atendimento emergencial 24h. Perdeu a chave ou trancou dentro? Ligue agora!',
     alternates: {
-        canonical: 'https://chaveirourgenterp.com.br/servicos/abertura-de-carros-ribeirao-preto/',
+        canonical: 'https://chaveiro24hribeiraopreto.com.br/servicos/abertura-de-carros-ribeirao-preto/',
     },
 }
 
